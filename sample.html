@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body onload="getLocation()">
+
+<p id="demo"></p>
+
+<div id="openweathermap-widget-15"></div>
+
+<script>
+  var x = document.getElementById("demo");
+
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=dea0b1881613ad281b94f376a9ec0ecf";
+    
+    fetch(apiUrl)
+      .then(function(response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error: " + response.status);
+        }
+      })
+      .then(function(data) {
+        var cityId = data.id;
+        loadWeatherWidget(cityId);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  }
+
+  function loadWeatherWidget(cityId) {
+    window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+    window.myWidgetParam.push({
+      id: 15,
+      cityid: cityId,
+      appid: 'dea0b1881613ad281b94f376a9ec0ecf',
+      units: 'metric',
+      containerid: 'openweathermap-widget-15'
+    });
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.charset = "utf-8";
+    script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(script, s);
+  }
+</script>
+
+</body>
+</html>

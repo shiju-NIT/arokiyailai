@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<!-- Mirrored from www.kodingwife.com/demos/cliq/dashboard2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2023 18:23:34 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 5 Dashboard Template">
+    <meta name="author" content="ParkerThemes">
+    <link rel="shortcut icon" href="img/fav.png">
+    <title>Cliq Admin Template - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="fonts/icomoon/icomoon.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="vendor/overlay-scroll/OverlayScrollbars.min.css">
+</head>
+
+<body>
+    <div id="loading-wrapper">
+        <div class="spinner-border"></div>
+        <div class="loading-messsage">
+            <span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span></div>
+    </div>
+    <div class="page-wrapper">
+        <nav class="sidebar-wrapper">
+            <div class="sidebar-brand"><a href="index.html" class="logo"><img src="img/logo.svg"
+                        alt="Cliq Admin Dashboard" /></a></div>
+            <div class="sidebarMenuScroll">
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="sidebar-dropdown active"><a href="#"><i
+                                    class="icon-house_siding gradient-orange"></i><span
+                                    class="menu-text">Dashboards</span></a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="index.html">Dashboard</a></li>
+                                    <li><a href="dashboard2.html" class="current-page">Dashboard 2</a></li>
+                                    <li><a href="dashboard3.html">Dashboard 3</a></li>
+                                    <li><a href="layout.html">Layout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="#"><i
+                                    class="icon-settings_input_svideo gradient-teal"></i><span
+                                    class="menu-text">Product</span></a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="orders.html">Orders</a></li>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="view-cart.html">Shopping Cart</a></li>
+                                    <li><a href="checkout.html">Billing Details</a></li>
+                                    <li><a href="customers.html">Customers</a></li>
+                                    <li><a href="add-product.html">Add Product</a></li>
+                                    <li><a href="reviews.html">Reviews</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="ui-elements.html"><i class="icon-photo_filter gradient-green"></i><span
+                                    class="menu-text">UI Elements</span></a></li>
+                        <li class="sidebar-dropdown"><a href="#"><i class="icon-model_training gradient-pink"></i><span
+                                    class="menu-text">Pages</span></a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="calendar.html">Calendar</a></li>
+                                    <li><a href="create-invoice.html">Create Invoice</a></li>
+                                    <li><a href="view-invoice.html">View Invoice</a></li>
+                                    <li><a href="invoice-list.html">Invoice List</a></li>
+                                    <li><a href="subscribers.html">Subscribers</a></li>
+                                    <li><a href="contacts.html">Contacts</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="account-settings.html">Account Settings</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="#"><i class="icon-edit_road gradient-yellow"></i><span
+                                    class="menu-text">Forms</span></a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="forms.html">Controls</a></li>
+                                    <li><a href="bs-select.html">Bootstrap Select</a></li>
+                                    <li><a href="date-time-pickers.html">Date Time Pickers</a></li>
+                                    <li><a href="input-mask.html">Input Masks</a></li>
+                                    <li><a href="summernote.html">Summernote</a></li>
+                                    <li><a href="tables.html">Tables</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="#"><i
+                                    class="icon-pie_chart_outlined gradient-blue"></i><span
+                                    class="menu-text">Graphs</span></a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="apex.html">Apex</a></li>
+                                    <li><a href="morris.html">Morris</a></li>
+                                    <li><a href="maps.html">Maps</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="#"><i class="icon-lock_outline gradient-violet"></i><span
+                                    class="menu-text">Authentication</span></a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="signup.html">Signup</a></li>
+                                    <li><a href="error.html">Error</a></li>
+                                    <li><a href="maintenance.html">Maintenance</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main-container">
+            <div class="page-header">
+                <div class="breadcrumb-container">
+                    <div class="toggle-sidebar" id="toggle-sidebar"><i class="icon-menu"></i></div>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="icon-house_siding"></i><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item breadcrumb-active" aria-current="page">Dashboard 2</li>
+                    </ol>
+                </div>
+                <div class="header-actions-container">
+                    <div class="search-container">
+                        <div class="input-group"><input type="text" class="form-control" placeholder="Search..."><button
+                                class="btn" type="button"><i class="icon-search"></i></button></div>
+                    </div>
+                    <ul class="header-actions">
+                        <li class="dropdown d-none d-md-block"><a href="#" id="countries" data-toggle="dropdown"
+                                aria-haspopup="true"><img src="img/flags/1x1/gb.svg" class="flag-img"
+                                    alt="Great Britain"></a>
+                            <div class="dropdown-menu dropdown-menu-end mini" aria-labelledby="countries">
+                                <div class="country-container"><a href="index.html"><img src="img/flags/1x1/us.svg"
+                                            alt="USA"></a><a href="index.html"><img src="img/flags/1x1/in.svg"
+                                            alt="India"></a><a href="index.html"><img src="img/flags/1x1/br.svg"
+                                            alt="Brazil"></a><a href="index.html"><img src="img/flags/1x1/tr.svg"
+                                            alt="Turkey"></a><a href="index.html"><img src="img/flags/1x1/id.svg"
+                                            alt="Indonesia"></a></div>
+                            </div>
+                        </li>
+                        <li class="dropdown d-none d-md-block"><a href="#" id="bookmarks" data-toggle="dropdown"
+                                aria-haspopup="true"><i class="icon-star_outline"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="bookmarks">
+                                <div class="bookmarks-container"><a href="#" class="bookmark-block"><img
+                                            src="img/social/dribbble.svg" alt="Dribbble">
+                                        <h5>Dribbble</h5>
+                                    </a><a href="#" class="bookmark-block"><img src="img/social/behance.svg"
+                                            alt="Behance">
+                                        <h5>Behance</h5>
+                                    </a><a href="#" class="bookmark-block"><img src="img/social/evernote.svg"
+                                            alt="Evernote">
+                                        <h5>Evernote</h5>
+                                    </a><a href="#" class="bookmark-block"><img src="img/social/dropbox.svg"
+                                            alt="Dropbox">
+                                        <h5>Dropbox</h5>
+                                    </a><a href="#" class="bookmark-block"><img src="img/social/amazon.svg"
+                                            alt="Amazon">
+                                        <h5>Amazon</h5>
+                                    </a><a href="#" class="bookmark-block"><img src="img/social/youtube.svg"
+                                            alt="Youtube">
+                                        <h5>Youtube</h5>
+                                    </a></div>
+                            </div>
+                        </li>
+                        <li class="dropdown d-none d-md-block"><a href="#" id="notifications" data-toggle="dropdown"
+                                aria-haspopup="true"><i
+                                    class="icon-notifications_none animate__animated animate__swing animate__infinite infinite"></i><span
+                                    class="count-label gradient-red animate__animated animate__heartBeat animate__infinite infinite">7</span></a>
+                            <div class="dropdown-menu dropdown-menu-end lrg" aria-labelledby="notifications">
+                                <div class="scroll240">
+                                    <ul class="header-notifications">
+                                        <li class="gradient-grey"><a href="#">
+                                                <div class="user-img"><img src="img/user.png" alt="User"></div>
+                                                <div class="details">
+                                                    <div class="user-title">Larkyn</div>
+                                                    <div class="noti-details">Check out every table in detail.</div>
+                                                    <div class="noti-date">Aug 25, 03:00 pm</div>
+                                                </div>
+                                            </a></li>
+                                        <li class="gradient-grey"><a href="#">
+                                                <div class="user-img"><img src="img/user2.png" alt="User"></div>
+                                                <div class="details">
+                                                    <div class="user-title">Braxten</div>
+                                                    <div class="noti-details">Approved new design.</div>
+                                                    <div class="noti-date">Aug 21, 12:00 am</div>
+                                                </div>
+                                            </a></li>
+                                        <li class="gradient-grey"><a href="#">
+                                                <div class="user-img"><img src="img/user3.png" alt="User"></div>
+                                                <div class="details">
+                                                    <div class="user-title">Maria</div>
+                                                    <div class="noti-details">Membership has been ended.</div>
+                                                    <div class="noti-date">Aug 18, 09:30 am</div>
+                                                </div>
+                                            </a></li>
+                                        <li class="gradient-grey"><a href="#">
+                                                <div class="user-img"><img src="img/user5.png" alt="User"></div>
+                                                <div class="details">
+                                                    <div class="user-title">Alex</div>
+                                                    <div class="noti-details">Design Review.</div>
+                                                    <div class="noti-date">Aug 15, 09:30 am</div>
+                                                </div>
+                                            </a></li>
+                                        <li class="gradient-green"><a href="#">
+                                                <div class="user-img"><img src="img/user6.png" alt="User"></div>
+                                                <div class="details">
+                                                    <div class="user-title">Sunny</div>
+                                                    <div class="noti-details">UI Discussion</div>
+                                                    <div class="noti-date">Aug 10, 09:30 am</div>
+                                                </div>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="#" id="userSettings" class="user-settings" data-toggle="dropdown"
+                                aria-haspopup="true"><span class="user-name d-none d-md-block">Ella Lindsey</span><span
+                                    class="avatar"><img src="img/user.png" alt="User Avatar"><span
+                                        class="status online"></span></span></a>
+                            <div class="dropdown-menu dropdown-menu-end md" aria-labelledby="userSettings">
+                                <div class="header-profile-avatar"><img src="img/user.png" alt="Avatar"></div>
+                                <div class="header-profile-block">
+                                    <h5>Ella Lindsey</h5>
+                                    <p>Admin</p>
+                                </div>
+                                <div class="header-profile-actions"><a href="profile.html" class="gradient-blue"><i
+                                            class="icon-person_outline"></i>Profile</a><a href="account-settings.html"
+                                        class="gradient-green"><i class="icon-edit_road"></i>Settings</a><a
+                                        href="login.html" class="gradient-red"><i
+                                            class="icon-power_settings_new"></i>Logout</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-wrapper-scroll">
+                <div class="content-wrapper">
+                    <div class="row gutters">
+                        <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="row gutters">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-violet-pink card-186">
+                                        <div class="card-body">
+                                            <div class="sales-tile">
+                                                <div class="sales-tile-block">
+                                                    <div class="sales-tile-icon violet"><i
+                                                            class="icon-supervised_user_circle"></i></div>
+                                                    <div class="sales-tile-details">
+                                                        <h5>Customers</h5>
+                                                        <h2>250</h2><span>+5.8%</span>
+                                                    </div>
+                                                </div>
+                                                <div id="customersGraph" class="apex-hide-lines"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-teal-cream card-186">
+                                        <div class="card-body">
+                                            <div class="sales-tile">
+                                                <div class="sales-tile-block">
+                                                    <div class="sales-tile-icon teal"><i
+                                                            class="icon-motion_photos_on"></i></div>
+                                                    <div class="sales-tile-details">
+                                                        <h5>Products</h5>
+                                                        <h2>185</h2><span>+4.9%</span>
+                                                    </div>
+                                                </div>
+                                                <div id="customersGraph2" class="apex-hide-lines"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-green card-186">
+                                        <div class="card-body">
+                                            <div class="sales-tile">
+                                                <div class="sales-tile-block">
+                                                    <div class="sales-tile-icon green"><i class="icon-shopping_bag"></i>
+                                                    </div>
+                                                    <div class="sales-tile-details">
+                                                        <h5>Orders</h5>
+                                                        <h2>600</h2><span>+8.2%</span>
+                                                    </div>
+                                                </div>
+                                                <div id="customersGraph3" class="apex-hide-lines"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-peach3 card-186">
+                                        <div class="card-body">
+                                            <div class="sales-tile">
+                                                <div class="sales-tile-block">
+                                                    <div class="sales-tile-icon peach"><i
+                                                            class="icon-settings_input_svideo"></i></div>
+                                                    <div class="sales-tile-details">
+                                                        <h5>Signups</h5>
+                                                        <h2>350</h2><span>+3.7%</span>
+                                                    </div>
+                                                </div>
+                                                <div id="customersGraph4" class="apex-hide-lines"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="card gradient-violet3 card-390">
+                                        <div class="card-body">
+                                            <div class="get-latest-updates-lg">
+                                                <div class="update-details">
+                                                    <h5>Get the latest<br>tech news &amp;<br>updates!</h5><button
+                                                        type="button" class="download-btn lg"><span class="icon"><img
+                                                                src="img/download-white.svg"
+                                                                alt="Download"></span>Download an App</button>
+                                                </div><img src="img/blocks2.svg"
+                                                    class="blocks-img animate__animated animate__pulse animate__infinite infinite"
+                                                    alt="Blocks">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="row gutters">
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-teal card-390">
+                                        <div class="gradient-vertical-strip"></div><button type="button"
+                                            class="download-icon download-reports"><img src="img/download.svg"
+                                                alt="Download"></button>
+                                        <div class="card-body">
+                                            <div class="card-title">Weekly<br />Sales</div>
+                                            <div id="salesGraph"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card gradient-pink card-390">
+                                        <div class="card-body">
+                                            <div class="earnings-container">
+                                                <div class="earnings-icon"><i
+                                                        class="icon-shopping_basket animate__animated animate__swing animate__infinite infinite"></i>
+                                                </div>
+                                                <div id="earningsGraph" class="apex-hide-lines"></div>
+                                                <div class="earnings-block">
+                                                    <div class="earning-details">
+                                                        <h2>7250</h2>
+                                                        <h5>Orders</h5>
+                                                    </div><span class="earnings-high-low">+6.9%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-grey3 card-800">
+                                        <div class="card-body">
+                                            <div class="card-title dark">Activity</div>
+                                            <div class="activity-container">
+                                                <div class="activity-block">
+                                                    <div class="activity-user"><img src="img/user.png"
+                                                            alt="Activity User"></div>
+                                                    <div class="activity-details">
+                                                        <h4>Fiona Stone</h4>
+                                                        <h5>3 hours ago</h5>
+                                                        <p>Sent invoice ref. #23457</p><span
+                                                            class="badge shade-green2">Sent</span>
+                                                    </div>
+                                                </div>
+                                                <div class="activity-block">
+                                                    <div class="activity-user"><img src="img/user4.png"
+                                                            alt="Activity User"></div>
+                                                    <div class="activity-details">
+                                                        <h4>Lucy Frazier</h4>
+                                                        <h5>7 houes ago</h5>
+                                                        <p>Paid invoice ref. #23459</p><span
+                                                            class="badge shade-orange2">Payments</span>
+                                                    </div>
+                                                </div>
+                                                <div class="activity-block">
+                                                    <div class="activity-user"><img src="img/user5.png"
+                                                            alt="Activity User"></div>
+                                                    <div class="activity-details">
+                                                        <h4>Jacqueline Mann</h4>
+                                                        <h5>1 day ago</h5>
+                                                        <p>Paid invoice ref. #23473</p><span
+                                                            class="badge shade-green2">Paid</span>
+                                                    </div>
+                                                </div>
+                                                <div class="activity-block">
+                                                    <div class="activity-user"><img src="img/user6.png"
+                                                            alt="Activity User"></div>
+                                                    <div class="activity-details">
+                                                        <h4>Elmer Hurlbutt</h4>
+                                                        <h5>3 day ago</h5>
+                                                        <p>Paid invoice ref. #26788</p><span
+                                                            class="badge shade-orange2">Sent</span>
+                                                    </div>
+                                                </div>
+                                                <div class="activity-block">
+                                                    <div class="activity-user"><img src="img/user2.png"
+                                                            alt="Activity User"></div>
+                                                    <div class="activity-details">
+                                                        <h4>Twin Phills</h4>
+                                                        <h5>One week ago</h5>
+                                                        <p>Paid invoice ref. #34546</p><span
+                                                            class="badge shade-green2">Invoice</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="card gradient-green-orange card-390">
+                                <div class="gradient-vertical-strip"></div><a href="contacts.html" type="button"
+                                    class="download-icon"><img src="img/settings.svg" alt="Settings"></a>
+                                <div class="card-body">
+                                    <div class="card-title">Admins &amp;<br>Members</div>
+                                    <ul class="admins-container">
+                                        <li><a href="account-settings.html"><img src="img/user2.png" class="avatar"
+                                                    alt="Admin">
+                                                <div class="admin-details">
+                                                    <h6>Gale Hunt</h6>
+                                                    <div class="admin-type">Admin</div>
+                                                </div>
+                                                <div class="admin-more"><i class="icon-arrow_forward_ios"></i></div>
+                                            </a></li>
+                                        <li><a href="account-settings.html"><img src="img/user3.png" class="avatar"
+                                                    alt="Admin">
+                                                <div class="admin-details">
+                                                    <h6>Kendrick Rowse</h6>
+                                                    <div class="admin-type">Admin</div>
+                                                </div>
+                                                <div class="admin-more"><i class="icon-arrow_forward_ios"></i></div>
+                                            </a></li>
+                                        <li><a href="account-settings.html"><img src="img/user.png" class="avatar"
+                                                    alt="Admin">
+                                                <div class="admin-details">
+                                                    <h6>Belinda Newton</h6>
+                                                    <div class="admin-type">Member</div>
+                                                </div>
+                                                <div class="admin-more"><i class="icon-arrow_forward_ios"></i></div>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="card gradient-peach3 card-390">
+                                <div class="card-body">
+                                    <div class="card-title">Monthly<br>Orders</div>
+                                    <div id="byDevice"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="row gutters">
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="card gradient-violet-pink card-186">
+                                        <div class="card-body">
+                                            <div class="card-title">Weekly Statistics</div>
+                                            <div class="row gutters">
+                                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                                    <div class="sales-tile2">
+                                                        <div class="sales-tile2-block">
+                                                            <div class="sales-tile2-icon"><img src="img/graphcool.svg"
+                                                                    alt="Statistics"></div>
+                                                            <div class="sales-tile2-details">
+                                                                <h2>1.7k</h2>
+                                                                <h5>Customers</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sales-tile2-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 70%" aria-valuenow="70"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                                    <div class="sales-tile2">
+                                                        <div class="sales-tile2-block">
+                                                            <div class="sales-tile2-icon"><img src="img/graphcool.svg"
+                                                                    alt="Statistics"></div>
+                                                            <div class="sales-tile2-details">
+                                                                <h2>3.9k</h2>
+                                                                <h5>Orders</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sales-tile2-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 80%" aria-valuenow="80"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                                    <div class="sales-tile2">
+                                                        <div class="sales-tile2-block">
+                                                            <div class="sales-tile2-icon"><img src="img/graphcool.svg"
+                                                                    alt="Statistics"></div>
+                                                            <div class="sales-tile2-details">
+                                                                <h2>7.3k</h2>
+                                                                <h5>Revenue</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sales-tile2-progress">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-pink-teal card-186">
+                                        <div class="card-body">
+                                            <div class="uploading-container"><a href="#" class="pause"
+                                                    id="play-pause"><i class="icon-pause_circle_outline"></i></a>
+                                                <div class="upload-progress-container">
+                                                    <div class="upload-icon"><img src="img/upload.svg" alt="Download">
+                                                    </div>
+                                                    <div class="upload-progress">
+                                                        <div class="upload-space-container">
+                                                            <div>45<span>%</span><span class="ms-2">Uploading...</span>
+                                                            </div>
+                                                            <div>100<span>GB</span></div>
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="card gradient-peach3 card-186">
+                                        <div class="card-body">
+                                            <div class="upgrade-plan">
+                                                <div><img src="img/award.svg" alt="Award"></div>
+                                                <div class="plan-details">
+                                                    <h5 class="mt-2">Upgrade your plan and get complete access.</h5><a
+                                                        href="pricing.html" class="btn">Upgrade Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-footer"><span>© CLIQ admin 2021</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+    <script src="vendor/overlay-scroll/custom-scrollbar.js"></script>
+    <script src="vendor/apex/apexcharts.min.js"></script>
+    <script src="vendor/apex/custom/home2/byDeviceGraph.js"></script>
+    <script src="vendor/apex/custom/home2/earningsGraph.js"></script>
+    <script src="vendor/apex/custom/home2/salesGraph.js"></script>
+    <script src="vendor/apex/custom/home2/sparklineGraphs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<!-- Mirrored from www.kodingwife.com/demos/cliq/dashboard2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2023 18:23:36 GMT -->
+
+</html>
