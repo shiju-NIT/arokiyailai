@@ -1,0 +1,7 @@
+# Hide file extensions
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Redirect to custom error page
+ErrorDocument 404 /404.php
